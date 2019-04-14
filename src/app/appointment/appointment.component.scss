@@ -1,0 +1,83 @@
+@import "./src/assets/dis/var";
+.appointment{ 
+    background-color: rgb(51, 50, 50);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+.appointment-form{
+    grid-template-columns:repeat(4,1fr);
+    width: 100%;
+    grid-gap:30px; 
+    .form-control, .form-group, .form-group select{
+        width: 270px;
+        height: 40px;
+        justify-self: center;
+    }
+    .section-header, .btn, .form-comment{
+        grid-column: 1/5;
+    }
+    .section-header{
+        padding-top:50px; 
+    }
+    .section-header h3{
+        margin-top: 0px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background: url('/assets/images/icon/separator-1.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 16px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+    .section-header p{
+        color: $color-gray;
+    }
+    .form-comment,.form-comment .form-control{
+        width: 1000px;
+        height: 120px;
+        justify-self: center;
+    }
+    .form-comment .form-control{
+        padding: 6px 12px;
+        font-size: 14px;
+        color: $color-black_gray;
+        background-color: $color-white;
+    }
+    .form-control{
+        border-radius: 0px;
+        box-shadow: none;
+        width: 250px;
+        padding: 0px 8px;
+        font-size: 14px;
+        color: $color-black_gray;
+    }
+    .form-group select{
+        
+        width: 100%;
+        color: $color-white_gray;
+        padding: 0 10px;
+        border: 1px solid $color-white;
+        margin-bottom: 25px;
+    }
+   .btn{
+       width: 250px;
+       justify-self: center;
+       margin: 0 auto;
+    font-size: 15px;
+    background-color: $color-green;
+    padding: 15px 30px;
+    position: relative;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    box-shadow: 0 2px 0 $bgcolor-green-after;
+    text-transform: uppercase;
+    color: $color-white;
+    box-shadow: none;
+   }
+}

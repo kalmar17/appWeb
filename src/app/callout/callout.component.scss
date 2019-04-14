@@ -1,0 +1,50 @@
+@import "./src/assets/dis/var";
+.callout {
+    background: url('/assets/images/callout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
+.callout-content{
+    margin-right: -15px;
+    margin-left: -15px;
+    text-transform: uppercase;
+    grid-template-columns: 5fr 1fr; 
+    align-items: center;
+    color: $color-white;
+    font-family: $montserrat;
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-top: 0;
+        display: inline-block;
+        width: 100%;
+        
+        //text-transform: uppercase;
+    }
+    h4 {
+        font-size: 18px;
+        
+        margin: 0px;
+        letter-spacing: 2px;
+        display: inline-block;
+        width: 100%;
+        font-weight: 500;
+    }
+    .callout-btn{
+        place-items: center;
+        //justify-content: center;
+    }
+    a {
+        margin-bottom: 0px;
+        background-color: transparent;
+        border: 1px solid $color-white;
+        border-radius: 0px;
+        padding: 12px 42px;
+        font-family: $lato;
+        font-weight: 700;
+        
+    }
+}

@@ -1,0 +1,112 @@
+@import "./src/assets/dis/var";
+.services{
+    margin-top: 50px;
+}
+.section-header{
+    text-align: center;
+    h3{
+        
+        text-transform: uppercase;
+        margin-top: 0px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background: url('/assets/images/icon/separator.jpg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 16px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 13px;
+        color: $color-gray;
+        margin-bottom: 60px;
+    }
+    
+}
+.service-tab{
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+}
+.nav-tabs{
+    border: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    grid-template-columns: repeat(4,1fr);
+    .active{
+        a{
+        background-color: $color-red;
+        border: none;
+            text-decoration: none;
+            color: $color-white;
+            i{
+                img{
+                    top: -30px;
+                }
+            }
+        }
+    }
+    li{
+        margin-bottom: 0;
+        list-style: none;
+        
+        i img{
+            position: absolute;
+        }
+        a:hover{
+            background-color: $color-red;
+            border: none;
+            text-decoration: none;
+            color: $color-white;
+            i{
+                img{
+                    top: -30px;
+                }
+            }
+        }
+        a{  text-decoration: none;
+            border: none;
+            font-size: 16px;
+            color: $color-bottom-footer;
+            padding: 21.1px 20px;
+            letter-spacing: 1px;
+            border-radius: 0;
+            margin-right: 0;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            i{
+                margin-right: 23px;
+                width: 27px;
+                height: 27px;
+                overflow: hidden;
+                position: relative;
+                float: left;
+                font-size: 16px;
+            }
+        }
+      
+    }
+}
+.tab-content .tab-pane {
+    display: none;
+}
+.tab-content .active{
+    display: block;
+}
+.tab-box{
+display: inline-block;
+    border-top: 1px solid $color-red;
+    background-color: $color-white-eee;
+    padding: 40px 25px;
+    p{
+        font-size: 13.5px;
+        color: $color-gray;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    p:last-child{
+        margin-bottom: 0px;
+    }
+}
