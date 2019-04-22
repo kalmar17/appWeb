@@ -10,6 +10,7 @@ import { CalloutComponent } from './callout/callout.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { WhyChUsComponent } from './why-ch-us/why-ch-us.component';
+import { TabContentComponent } from './tab-content/tab-content.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { WhyChUsComponent } from './why-ch-us/why-ch-us.component';
     CalloutComponent,
     FooterComponent,
     ServicesComponent,
-    WhyChUsComponent
+    WhyChUsComponent,
+    TabContentComponent
   ],
   imports: [
     BrowserModule,

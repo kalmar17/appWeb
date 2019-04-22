@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TABS } from './tabs'
-import { Tab } from'./tab'
+import { TABS } from '../tabs'
+import { Tab } from'../tab'
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',

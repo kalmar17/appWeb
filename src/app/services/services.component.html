@@ -25,12 +25,13 @@
               </ul>
           </div>
           <div id = tab class="tab-content">
-              <div id="tab" class="tab-pane active" role="tabpanel" *ngIf="selectedTab">
-                  <div class="tab-box">
+              <app-tab-content [tab] = "selectedTab"></app-tab-content>
+              <!-- <div id="tab" class="tab-pane active" role="tabpanel" *ngIf="selectedTab">
+                <div class="tab-box">
                       <p>{{selectedTab.pNum1}}</p>
                       <p>{{selectedTab.pNum2}}</p>
                   </div>
-              </div>
+              </div> -->
               <!-- <div id="tab-two" class="tab-pane" role="tabpanel">
                   <div class="tab-box">
                       <p>2 Trajectory into an orbit which freezes his life support systems and returns Buck Rogers to Earth five-hundred years later. We're gonna do it. On your mark get set and go now. Got a dream and we just know now we're gonna make our dream come true. Space. The final frontier. These are the voyages of the Starship Enterprise.</p>
