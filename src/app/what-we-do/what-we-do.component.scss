@@ -1,0 +1,51 @@
+@import"./src/assets/dis/var";
+.what-we-do .section-header {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px 0;
+}
+.what-we-do {
+	clear: left;
+}
+.what-we-do-content {
+	position: relative;
+	padding-left: 100px;
+	margin-bottom: 50px;
+}
+.what-we-do-content img {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.what-we-do-content h3 {
+	font-size: 18px;
+	margin-top: 12px;
+}
+.what-we-do-content p {
+	color: #969595;
+	line-height: 25px;
+}
+.container{
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-div{
+    grid-template-columns: repeat(3,1fr);
+}
+.section-header{
+    
+    h3{
+        margin-top: 0px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background: url('/assets/images/icon/separator.jpg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 16px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 13px;
+        color:$color-gray;
+        margin-bottom: 30px;
+    }
+}

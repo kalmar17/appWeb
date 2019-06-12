@@ -50,10 +50,10 @@
           <div class="rov">
               <div class="navbar-header">
                       <ul class="nav navbar-nav grid">
-                          <li class="active"><a href="index.html">Home</a></li>
-                          <li><a href="#" onclick="first()">About Us</a></li>
-                          <li><a href="#" onclick="two()">Contact US</a></li>
-                          <li><a href="#">Get An Appointment</a></li>
+                          <li *ngFor="let menu of menus" class="active"><a href="{{menu.url}}">{{menu.title}}</a></li>
+                          <!-- <li><a href="#" onclick="first()">{{menu.title}}</a></li>
+                          <li><a href="#" onclick="two()">{{menu.title}}</a></li>
+                          <li><a href='http://localhost:8081/add'>{{menu.title}}</a></li> -->
                       </ul>			
               </div>			                        
           </div>

@@ -1,50 +1,5 @@
 <div class="wrapper grid"> 
-  <app-header></app-header>
-  <app-intro></app-intro>
-  <app-appointment></app-appointment>
-  <app-services></app-services>
-  <app-callout></app-callout>
-  <app-why-ch-us></app-why-ch-us>
-  <app-footer></app-footer>
+<app-header [menus]="menus" ></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
 </div>
-
-  <script>
-          // Add active class to the current button (highlight it)
-          var header = document.getElementById("tab-nav");
-          var btns = header.getElementsByTagName("li");
-          for (var i = 0; i < btns.length; i++) {
-          
-            btns[i].addEventListener("click", function() {
-            var current = header.getElementsByClassName("active");
-            if (current.length > 0) { 
-              current[0].className = current[0].className.replace("active","");
-            }
-            this.className += "active";
-            });
-            
-          }
-          function first(){
-              let div1 = document.body.getElementsByClassName("col")
-              let div2 = document.body.getElementsByClassName("appointment")
-              
-              div1[0].style.gridColumn = "3/4";
-              div1[0].style.gridRow = "1";
-              div1[1].style.gridColumn = "2/3";
-              div1[1].style.gridRow = "1";
-              div1[2].style.gridColumn = "1/2";
-              div1[2].style.gridRow = "1";
-
-              div2[0].style.gridRow = "6";
-          }
-          function two(){
-              let div1 = document.body.getElementsByClassName("why-row-why")
-              div1[0].style.gridColumn = "1/2";
-              div1[0].style.gridRow = "1";
-              div1[1].style.gridColumn = "2/5";
-              div1[1].style.gridRow = "1";
-              div1[2].style.gridColumn = "2/3";
-              div1[2].style.gridRow = "2";
-              div1[3].style.gridColumn = "3/5";
-              div1[3].style.gridRow = "2";
-          }
-  </script>

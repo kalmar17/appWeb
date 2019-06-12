@@ -5,22 +5,22 @@
               <!-- Section Header -->
               <div class="section-header">
                   <h3>Get An Appointment</h3>
-                  <p>They will have to make the best of things its an uphill climb</p>
+                  <p>They will have to make the best of things its an uphill climb {{InUser.comm}}</p>
               </div><!-- Section Header /- -->
               <div class="">
-                  <input type="text" class="form-control" placeholder="First Name" required="">
+                  <input type="text" class="form-control" placeholder="First Name" required="" name="firstName" [(ngModel)]="InUser.firstName">
               </div>
               <div class="">
-                  <input type="text" class="form-control" placeholder="Last Name" required="">
+                  <input type="text" class="form-control" placeholder="Last Name" required="" name="lastName" [(ngModel)]="InUser.lastName">
               </div>
               <div class="">
-                  <input type="text" class="form-control" placeholder="Email" required="">
+                  <input type="text" class="form-control" placeholder="Email" required="" name="email" [(ngModel)]="InUser.email">
               </div>
               <div class="">
-                  <input type="text" class="form-control" placeholder="Phone Number" required="">
+                  <input type="text" class="form-control" placeholder="Phone" required="" name="number" [(ngModel)]="InUser.number">
               </div>
               <div class="form-group">
-                  <select>
+                  <select [(ngModel)]="InUser.petCategory" name="pet">
                       <option>Pet Category</option>
                       <option>Pet Category</option>
                       <option>Pet Category</option>
@@ -28,7 +28,7 @@
                   </select>
               </div>
               <div class="form-group">
-                  <select>
+                  <select [(ngModel)]="InUser.services1" name="services1">
                       <option>Service Type</option>
                       <option>Service Type</option>
                       <option>Service Type</option>
@@ -36,7 +36,7 @@
                   </select>
               </div>
               <div class="form-group">
-                  <select>
+                  <select [(ngModel)]="InUser.services2" name="services2">
                       <option>Service Type</option>
                       <option>Service Type</option>
                       <option>Service Type</option>
@@ -44,7 +44,7 @@
                   </select>
               </div>
               <div class="form-group">
-                  <select>
+                  <select [(ngModel)]="InUser.services3" name="services3">
                       <option>Service Type</option>
                       <option>Service Type</option>
                       <option>Service Type</option>
@@ -52,9 +52,9 @@
                   </select>
               </div>
               <div class="form-comment">
-                  <textarea class="form-control" placeholder="Anything we should know about your pet?" required=""></textarea>
+                  <input class="form-control" placeholder="Anything we should know about your pet?" required="" [(ngModel)]="InUser.comm" name="comm">
               </div>
-              <button class="btn btn-default">Get An Appoinment</button>
+              <button class="btn btn-default" (click)='Send(InUser)'>Get An Appoinment</button>
           </form>
       </div>
   </div><!-- Container /- -->

@@ -9,8 +9,8 @@
       <div class="service-tab">
           <div id="tab-nav">
               <ul class="nav-tabs grid tabs" role="tablist">
-                  <li role="presentation" *ngFor="let tab of tabs" [class.active]="tab === selectedTab" (click)="onSelect(tab)">
-                      <a data-toggle="tab" role="tab" aria-controls="tab-one" aria-expanded="true"><i>
+                  <li role="presentation" *ngFor="let tab of tabs" [class.active]="tab === selectedTab" (click)="onSelect(tab)" (mousedown)="Enter($event)">
+                      <a data-toggle="tab" role="tab" aria-controls="tab-one" aria-expanded="true"  ><i>
                           <img src="/assets/images/icon/{{tab.image}}" alt="care"></i>{{tab.title}}</a>
                   </li>
                   <!-- <li class="" role="presentation">

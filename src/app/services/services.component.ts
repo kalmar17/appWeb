@@ -5,6 +5,7 @@ import { Tab } from'../tab'
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss']
+  
 })
 export class ServicesComponent implements OnInit {
 
@@ -16,6 +17,9 @@ export class ServicesComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+  Enter(e){
+    console.log(e);
   }
   onSelect(tab:Tab){
     this.selectedTab = tab;

@@ -11,13 +11,12 @@
 }
 .why-choose-content{
     // width: 270px;
-    
     text-transform: uppercase;
     .why-choose-hover {
         padding: 50px 24px;
         font-family:montserrat;
         border: 1px solid $color-white-eee;
-        min-height: 250px;
+        min-height: 300px;
         
         i {
             width: 70px;
@@ -64,7 +63,9 @@
 .why-choose-content:hover{
     .why-choose-hover{
         background-color: $color-blue-why;
-       
+        a {
+            opacity: 1;
+        }
         i {
             transform: scale(1.2);
            // position: absolute;
@@ -82,7 +83,23 @@
             font-weight: 500;
         }
     }
-    a {
-        opacity: 1;
+    
+}
+.section-header{
+    
+    h3{
+        margin-top: 0px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        background: url('/assets/images/icon/separator.jpg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 16px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 13px;
+        color:$color-gray;
+        margin-bottom: 60px;
     }
 }

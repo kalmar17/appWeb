@@ -5,17 +5,14 @@
           <p>They will have to make the best of things its an uphill climb</p>
       </div>
       <div class="row-pet grid">
-          <div class="pet-images bgcolor-default">
-
-              
+          <div *ngFor="let intro of intros" class="pet-images bgcolor-{{intro.color}}">
               <div class="content-box">
-                  <h3>Pet wellness <span>We Take Care On Your Pet</span><i><img src="/assets/images/icon/intro-icon-1.png" alt="Intro Icon" /></i></h3>
-                  <p> To a deluxe apartment in the sky. And we'll do it our way yes our way make all our dreams come true for me and you No phone no lights no motor</p>
+                  <h3>{{intro.title}}<span>{{intro.titleMin}}</span><i><img src="/assets/images/icon/{{intro.image}}" alt="Intro Icon" /></i></h3>
+                  <p>{{intro.p}}</p>
                   <a href="#" title="Read More">Read More <i class="fa fa-angle-double-right"></i></a>
               </div>
           </div>
-          <div class="pet-images bgcolor-green">
-              
+          <!-- <div class="pet-images bgcolor-green">
               <div class="content-box">
                   <h3>Pet wellness <span>We Take Care On Your Pet</span><i><img src="/assets/images/icon/intro-icon-2.png" alt="Intro Icon" /></i></h3>
                   <p> To a deluxe apartment in the sky. And we'll do it our way yes our way make all our dreams come true for me and you No phone no lights no motor</p>
@@ -23,13 +20,19 @@
               </div>
           </div>
           <div class="pet-images bgcolor-yellow">
-              
               <div class="content-box">
                   <h3>Pet wellness <span>We Take Care On Your Pet</span><i><img src="/assets/images/icon/intro-icon-3.png" alt="Intro Icon" /></i></h3>
                   <p> To a deluxe apartment in the sky. And we'll do it our way yes our way make all our dreams come true for me and you No phone no lights no motor</p>
                   <a href="#" title="Read More">Read More <i class="fa fa-angle-double-right"></i></a>
               </div>
           </div>
+          <div class="pet-images bgcolor-yellow">
+            <div class="content-box">
+                <h3>Pet wellness <span>We Take Care On Your Pet</span><i><img src="/assets/images/icon/intro-icon-3.png" alt="Intro Icon" /></i></h3>
+                <p> To a deluxe apartment in the sky. And we'll do it our way yes our way make all our dreams come true for me and you No phone no lights no motor</p>
+                <a href="#" title="Read More">Read More <i class="fa fa-angle-double-right"></i></a>
+            </div>
+        </div> -->
       </div>
   </div>
 </div>

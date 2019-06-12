@@ -52,10 +52,10 @@
     border-radius: 0;
 }
 .nav{
-    grid-template-columns: repeat(4,1fr);
-grid-gap: 20px;
-    li{
-        a{
+    grid-auto-columns: 1fr;
+    grid-gap: 20px;
+    li{grid-row: 1;
+        a{ 
             display: block;
             background-color: $color-btn-header;
             padding: 25px 20px;

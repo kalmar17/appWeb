@@ -1,0 +1,16 @@
+{
+    "intros":[
+        {"title":"Pet wellness","titleMin":"We Take Care On Your Pet","image":"intro-icon-1.png","p":"To a deluxe apartment in the sky. And we`ll do it our way yes our way make all our dreams come true for me and you No phone no lights no motor","color":"default"},
+        {"title":"Pet wellness2","titleMin":"We Take Care On Your Pet","image":"intro-icon-2.png","p":"To a deluxe apartment in the sky. And we`ll do it our way yes our way make all our dreams come true for me and you No phone no lights no motor","color":"green"},
+        {"title":"Pet wellness3","titleMin":"We Take Care On Your Pet","image":"intro-icon-3.png","p":"To a deluxe apartment in the sky. And we`ll do it our way yes our way make all our dreams come true for me and you No phone no lights no motor","color":"yellow"}
+    ],
+    "menus":[
+        {"title":"Home","url":"index.html"},
+        {"title":"About Us","url":"about"},
+        {"title":"Services","url":"service"},
+        {"title":"Get An Appointment","url":"#"}
+    ],"admin":[
+        {"login":"login","password":"pass"},
+        {"login":"pass","password":"word"}
+    ]
+}
